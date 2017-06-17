@@ -30,9 +30,9 @@
 <TMPL>$C</TMPL>
 }
 
-% \newcommand{\myDcontent}[0]{
-% <TMPL>$D</TMPL>
-% }
+\newcommand{\myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XDcontent}[0]{
+<TMPL>$C</TMPL>
+}
 
 \newcommand{\mycard}[5]{%
 	\vspace{0.1cm}
@@ -81,6 +81,16 @@
 \newpage
 
 \begin{textblock}{8}(0,0)
+\textblocklabel{picture3}
+\mycard{}{\myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XIdentifier}{\parbox{9.0cm}{D:
+\myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XDcontent
+}}{}{} 
+\end{textblock}
+
+\null
+\newpage
+
+\begin{textblock}{8}(0,0)
 \textblocklabel{picture5}
 \mycard{}{\myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XIdentifier}{\parbox{9.0cm}{A:
 \myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XAcontent
@@ -101,12 +111,12 @@
 }}{}{} 
 \end{textblock}
 
-% \begin{textblock}{8}(8,4)
-% \textblocklabel{picture7}
-% \mycard{}{\myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XIdentifier}{\parbox{9.0cm}{D:
-% \myDcontent
-% }}{}{} 
-% \end{textblock}
+\begin{textblock}{8}(8,4)
+\textblocklabel{picture7}
+\mycard{}{\myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XIdentifier}{\parbox{9.0cm}{D:
+\myX<TMPL>$topic</TMPL>X<TMPL>$form</TMPL>XDcontent
+}}{}{} 
+\end{textblock}
 
 \end{document}
 
